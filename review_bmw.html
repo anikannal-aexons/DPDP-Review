@@ -253,10 +253,21 @@
       border-radius: 50%;
     }
 
-    .stat-dot.pending { background: var(--border); }
-    .stat-dot.approved { background: var(--green); }
-    .stat-dot.flagged { background: var(--amber); }
-    .stat-dot.rejected { background: var(--red); }
+    .stat-dot.pending {
+      background: var(--border);
+    }
+
+    .stat-dot.approved {
+      background: var(--green);
+    }
+
+    .stat-dot.flagged {
+      background: var(--amber);
+    }
+
+    .stat-dot.rejected {
+      background: var(--red);
+    }
 
     .content {
       max-width: 960px;
@@ -283,9 +294,20 @@
       transition: border-color 0.15s;
     }
 
-    .rule-card.status-approved, .chk-card.status-approved { border-left: 3px solid var(--green); }
-    .rule-card.status-flagged, .chk-card.status-flagged { border-left: 3px solid var(--amber); }
-    .rule-card.status-rejected, .chk-card.status-rejected { border-left: 3px solid var(--red); }
+    .rule-card.status-approved,
+    .chk-card.status-approved {
+      border-left: 3px solid var(--green);
+    }
+
+    .rule-card.status-flagged,
+    .chk-card.status-flagged {
+      border-left: 3px solid var(--amber);
+    }
+
+    .rule-card.status-rejected,
+    .chk-card.status-rejected {
+      border-left: 3px solid var(--red);
+    }
 
     .card-header {
       display: flex;
@@ -296,7 +318,9 @@
       user-select: none;
     }
 
-    .card-header:hover { background: #f8f9fb; }
+    .card-header:hover {
+      background: #f8f9fb;
+    }
 
     .card-id {
       font-family: 'SF Mono', 'Consolas', monospace;
@@ -319,7 +343,8 @@
       flex-shrink: 0;
     }
 
-    .severity-badge, .type-badge {
+    .severity-badge,
+    .type-badge {
       font-size: 11px;
       font-weight: 600;
       padding: 2px 8px;
@@ -328,15 +353,45 @@
       letter-spacing: 0.03em;
     }
 
-    .severity-Critical { background: var(--red-bg); color: var(--red); }
-    .severity-High { background: var(--amber-bg); color: var(--amber); }
-    .severity-Medium { background: var(--purple-bg); color: var(--purple); }
-    .severity-Low { background: var(--bg); color: var(--text-muted); }
+    .severity-Critical {
+      background: var(--red-bg);
+      color: var(--red);
+    }
 
-    .type-Document { background: var(--accent-light); color: var(--accent); }
-    .type-Record { background: var(--purple-bg); color: var(--purple); }
-    .type-Attestation { background: var(--amber-bg); color: var(--amber); }
-    .type-Data\ Value { background: var(--green-bg); color: var(--green); }
+    .severity-High {
+      background: var(--amber-bg);
+      color: var(--amber);
+    }
+
+    .severity-Medium {
+      background: var(--purple-bg);
+      color: var(--purple);
+    }
+
+    .severity-Low {
+      background: var(--bg);
+      color: var(--text-muted);
+    }
+
+    .type-Document {
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .type-Record {
+      background: var(--purple-bg);
+      color: var(--purple);
+    }
+
+    .type-Attestation {
+      background: var(--amber-bg);
+      color: var(--amber);
+    }
+
+    .type-Data\ Value {
+      background: var(--green-bg);
+      color: var(--green);
+    }
 
     .expand-icon {
       color: var(--text-muted);
@@ -352,7 +407,9 @@
       border-top: 1px solid var(--bg);
     }
 
-    .card-body.open { display: block; }
+    .card-body.open {
+      display: block;
+    }
 
     .detail-row {
       display: flex;
@@ -367,7 +424,9 @@
       flex-shrink: 0;
     }
 
-    .detail-value { color: var(--text); }
+    .detail-value {
+      color: var(--text);
+    }
 
     .keywords {
       display: flex;
@@ -395,7 +454,10 @@
       text-decoration: none;
     }
 
-    .rule-link:hover { background: var(--accent); color: white; }
+    .rule-link:hover {
+      background: var(--accent);
+      color: white;
+    }
 
     /* Review controls */
     .review-section {
@@ -431,10 +493,27 @@
       transition: all 0.15s;
     }
 
-    .review-btn:hover { border-color: var(--text-muted); }
-    .review-btn.selected-approved { background: var(--green-bg); color: var(--green); border-color: var(--green); }
-    .review-btn.selected-flagged { background: var(--amber-bg); color: var(--amber); border-color: var(--amber); }
-    .review-btn.selected-rejected { background: var(--red-bg); color: var(--red); border-color: var(--red); }
+    .review-btn:hover {
+      border-color: var(--text-muted);
+    }
+
+    .review-btn.selected-approved {
+      background: var(--green-bg);
+      color: var(--green);
+      border-color: var(--green);
+    }
+
+    .review-btn.selected-flagged {
+      background: var(--amber-bg);
+      color: var(--amber);
+      border-color: var(--amber);
+    }
+
+    .review-btn.selected-rejected {
+      background: var(--red-bg);
+      color: var(--red);
+      border-color: var(--red);
+    }
 
     .comment-input {
       width: 100%;
@@ -448,9 +527,15 @@
       color: var(--text);
     }
 
-    .comment-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+    .comment-input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-light);
+    }
 
-    .previous-reviews { margin-top: 14px; }
+    .previous-reviews {
+      margin-top: 14px;
+    }
 
     .prev-review {
       display: flex;
@@ -463,86 +548,233 @@
     }
 
     .prev-reviewer-avatar {
-      width: 24px; height: 24px; border-radius: 50%;
-      background: var(--text-muted); color: white;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 600; font-size: 10px; flex-shrink: 0; margin-top: 1px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
 
-    .prev-review-content { flex: 1; }
-    .prev-review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; }
-    .prev-review-name { font-weight: 600; color: var(--text); }
+    .prev-review-content {
+      flex: 1;
+    }
+
+    .prev-review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .prev-review-name {
+      font-weight: 600;
+      color: var(--text);
+    }
 
     .prev-review-status {
-      font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 3px;
+      text-transform: uppercase;
     }
 
-    .prev-review-status.approved { background: var(--green-bg); color: var(--green); }
-    .prev-review-status.flagged { background: var(--amber-bg); color: var(--amber); }
-    .prev-review-status.rejected { background: var(--red-bg); color: var(--red); }
-    .prev-review-comment { color: var(--text-muted); }
-    .prev-review-time { color: var(--border); font-size: 10px; margin-top: 2px; }
+    .prev-review-status.approved {
+      background: var(--green-bg);
+      color: var(--green);
+    }
+
+    .prev-review-status.flagged {
+      background: var(--amber-bg);
+      color: var(--amber);
+    }
+
+    .prev-review-status.rejected {
+      background: var(--red-bg);
+      color: var(--red);
+    }
+
+    .prev-review-comment {
+      color: var(--text-muted);
+    }
+
+    .prev-review-time {
+      color: var(--border);
+      font-size: 10px;
+      margin-top: 2px;
+    }
 
     /* Footer bar */
     .export-bar {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: var(--surface); border-top: 1px solid var(--border);
-      padding: 12px 32px; display: flex; justify-content: space-between; align-items: center; z-index: 100;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 12px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
     }
 
     .export-btn {
-      padding: 8px 20px; background: var(--accent); color: white; border: none;
-      border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.15s;
+      padding: 8px 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
     }
 
-    .export-btn:hover { background: #1d4ed8; }
-    .export-btn:disabled { background: var(--border); cursor: not-allowed; }
-    .export-btn.secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
-    .export-btn.secondary:hover { background: var(--bg); }
-    .export-btn.success { background: var(--green); }
-    .export-actions { display: flex; gap: 8px; }
-    .progress-text { font-size: 13px; color: var(--text-muted); }
+    .export-btn:hover {
+      background: #1d4ed8;
+    }
 
-    .chk-rules-list { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .export-btn:disabled {
+      background: var(--border);
+      cursor: not-allowed;
+    }
 
-    .filter-bar { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .export-btn.secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .export-btn.secondary:hover {
+      background: var(--bg);
+    }
+
+    .export-btn.success {
+      background: var(--green);
+    }
+
+    .export-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .progress-text {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .chk-rules-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
 
     .filter-btn {
-      padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px;
-      font-size: 12px; cursor: pointer; background: var(--surface); color: var(--text-muted);
-      font-weight: 500; transition: all 0.15s;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      background: var(--surface);
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: all 0.15s;
     }
 
-    .filter-btn:hover { border-color: var(--text-muted); }
-    .filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+    .filter-btn:hover {
+      border-color: var(--text-muted);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
 
     .search-input {
-      flex: 1; min-width: 200px; padding: 5px 12px; border: 1px solid var(--border);
-      border-radius: 20px; font-size: 13px; font-family: inherit; color: var(--text);
+      flex: 1;
+      min-width: 200px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text);
     }
 
-    .search-input:focus { outline: none; border-color: var(--accent); }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
 
-    .empty-state { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 14px; }
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
 
     /* Toast */
     .toast {
-      position: fixed; top: 20px; right: 20px; padding: 12px 20px; border-radius: 8px;
-      font-size: 14px; font-weight: 500; z-index: 2000; transform: translateX(120%);
-      transition: transform 0.3s; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      z-index: 2000;
+      transform: translateX(120%);
+      transition: transform 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .toast.show { transform: translateX(0); }
-    .toast.success { background: var(--green); color: white; }
-    .toast.error { background: var(--red); color: white; }
+    .toast.show {
+      transform: translateX(0);
+    }
+
+    .toast.success {
+      background: var(--green);
+      color: white;
+    }
+
+    .toast.error {
+      background: var(--red);
+      color: white;
+    }
 
     .config-banner {
-      background: var(--amber-bg); border: 1px solid var(--amber); border-radius: 8px;
-      padding: 12px 16px; margin-bottom: 16px; font-size: 13px; color: var(--amber);
-      display: flex; align-items: center; gap: 8px;
+      background: var(--amber-bg);
+      border: 1px solid var(--amber);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: var(--amber);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .config-banner.hidden { display: none; }
+    .config-banner.hidden {
+      display: none;
+    }
   </style>
 </head>
 
@@ -552,7 +784,8 @@
   <div class="reviewer-gate" id="reviewer-gate">
     <div class="gate-card">
       <h2>Welcome, Reviewer</h2>
-      <p>Enter your name and email to begin. Your feedback will be tied to your identity so multiple reviewers can submit independently without overwriting each other.</p>
+      <p>Enter your name and email to begin. Your feedback will be tied to your identity so multiple reviewers can
+        submit independently without overwriting each other.</p>
       <label for="gate-name">Your name</label>
       <input type="text" class="gate-input" id="gate-name" placeholder="e.g. Dr. Priya Sharma" autofocus>
       <label for="gate-email">Your email</label>
@@ -569,7 +802,8 @@
     <div class="header-top">
       <div>
         <h1>BMW Rules 2016 — Expert Review</h1>
-        <div class="subtitle">Bio-Medical Waste Management Rules, 2016 &middot; 64 rules &middot; 18 checklist items</div>
+        <div class="subtitle">Bio-Medical Waste Management Rules, 2016 &middot; 64 rules &middot; 18 checklist items
+        </div>
       </div>
       <div class="reviewer-info" id="reviewer-info" style="display:none">
         <div class="reviewer-avatar" id="reviewer-avatar"></div>
@@ -601,7 +835,8 @@
 
   <div class="content">
     <div class="config-banner" id="config-banner">
-      &#9888; Google Sheet webhook not configured. Reviews will be saved locally only. See <code>google_apps_script_setup.md</code> for setup instructions.
+      &#9888; Google Sheet webhook not configured. Reviews will be saved locally only. See
+      <code>google_apps_script_setup.md</code> for setup instructions.
     </div>
 
     <div class="panel active" id="panel-rules">
@@ -618,7 +853,8 @@
 
     <div class="panel" id="panel-checklist">
       <div class="filter-bar">
-        <input type="text" class="search-input" id="chk-search" placeholder="Search checklist..." oninput="filterChecklist()">
+        <input type="text" class="search-input" id="chk-search" placeholder="Search checklist..."
+          oninput="filterChecklist()">
         <button class="filter-btn active" data-filter="all" onclick="setFilter(this, 'checklist')">All</button>
         <button class="filter-btn" data-filter="Document" onclick="setFilter(this, 'checklist')">Document</button>
         <button class="filter-btn" data-filter="Record" onclick="setFilter(this, 'checklist')">Record</button>
@@ -642,10 +878,10 @@
   </div>
 
   <script>
-    const WEBHOOK_URL = '';
+    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxZTPfXTKWCMgwnQOw1fKEdMQ2VfEY9bana4_n2Ncfxvimidlp2o7eN4pfM3x4PNrZpGg/exec';
 
-    const rulesData = {"framework": "Bio-Medical Waste Management Rules, 2016", "extracted_at": "2026-05-01T14:00:00Z", "source_file": "Bio-medical_Waste_Management_Rules_2016.pdf", "rules": [{"id": "RULE-001", "section": "Rule 4(a)", "requirement": "Every occupier must handle bio-medical waste in a manner that does not cause any adverse effect to human health or the environment.", "keywords": ["handling", "health", "environment", "occupier"], "severity": "Critical", "active": true}, {"id": "RULE-002", "section": "Rule 4(b)", "requirement": "Occupier must provide safe, ventilated, and secured storage area for segregated bio-medical waste in coloured bags/containers as specified in Schedule I.", "keywords": ["storage", "segregation", "coloured bags", "ventilation", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-003", "section": "Rule 4(c)", "requirement": "Occupier must pre-treat laboratory waste, microbiological waste, blood samples, and blood bags through disinfection or sterilisation as per WHO/NACO guidelines before handing over to CBMWTF.", "keywords": ["pre-treatment", "disinfection", "sterilisation", "lab waste", "blood bags", "WHO", "NACO"], "severity": "Critical", "active": true}, {"id": "RULE-004", "section": "Rule 4(d)", "requirement": "Occupier must phase out use of chlorinated plastic bags, gloves, and blood bags within two years from the date of notification of these rules.", "keywords": ["chlorinated plastic", "phase out", "gloves", "blood bags"], "severity": "Medium", "active": true}, {"id": "RULE-005", "section": "Rule 4(e)", "requirement": "Non-bio-medical solid waste generated within the premises must be disposed of in accordance with the respective waste management rules (e.g., Solid Waste Management Rules, 2016).", "keywords": ["non-BMW", "solid waste", "disposal", "municipal waste"], "severity": "High", "active": true}, {"id": "RULE-006", "section": "Rule 4(f)", "requirement": "Treated bio-medical waste must not be mixed with municipal solid waste at any point.", "keywords": ["mixing", "treated waste", "municipal solid waste", "segregation"], "severity": "Critical", "active": true}, {"id": "RULE-007", "section": "Rule 4(g)", "requirement": "Occupier must provide training to all healthcare workers and others involved in handling bio-medical waste at the time of induction and thereafter at least once every year. Training details must be included in the annual report.", "keywords": ["training", "healthcare workers", "induction", "annual", "annual report"], "severity": "High", "active": true}, {"id": "RULE-008", "section": "Rule 4(h)", "requirement": "All healthcare workers and others involved in handling bio-medical waste must be immunised against Hepatitis B and Tetanus as per the National Immunisation Policy.", "keywords": ["immunisation", "Hepatitis B", "Tetanus", "healthcare workers"], "severity": "Critical", "active": true}, {"id": "RULE-009", "section": "Rule 4(i)", "requirement": "Occupier must establish a bar-code system for bags and containers containing bio-medical waste within one year from the date of notification.", "keywords": ["bar-code", "tracking", "bags", "containers"], "severity": "Medium", "active": true}, {"id": "RULE-010", "section": "Rule 4(j)", "requirement": "Liquid chemical waste must be segregated at source and pre-treated or neutralised before mixing with other effluent generated from the healthcare facility.", "keywords": ["liquid chemical waste", "segregation", "pre-treatment", "neutralisation", "effluent"], "severity": "Critical", "active": true}, {"id": "RULE-011", "section": "Rule 4(k)", "requirement": "All liquid waste generated from the healthcare facility must be treated and disposed of in compliance with the Water (Prevention and Control of Pollution) Act, 1974.", "keywords": ["liquid waste", "Water Act", "effluent treatment", "disposal"], "severity": "High", "active": true}, {"id": "RULE-012", "section": "Rule 4(l)", "requirement": "Occupier must ensure occupational safety of all healthcare workers and others involved in handling bio-medical waste by providing appropriate personal protective equipment (PPE).", "keywords": ["occupational safety", "PPE", "protective equipment", "healthcare workers"], "severity": "Critical", "active": true}, {"id": "RULE-013", "section": "Rule 4(m)", "requirement": "Occupier must conduct health check-up of all workers involved in handling bio-medical waste at the time of induction and thereafter once every year, and maintain records of such check-ups.", "keywords": ["health check-up", "medical examination", "workers", "records", "annual"], "severity": "High", "active": true}, {"id": "RULE-014", "section": "Rule 4(n)", "requirement": "Occupier must maintain and update a daily bio-medical waste management register and display monthly records on the facility's website, categorised as per Schedule I colour coding.", "keywords": ["register", "daily records", "website", "monthly display", "Schedule I"], "severity": "High", "active": true}, {"id": "RULE-015", "section": "Rule 4(o)", "requirement": "Any major accident occurring at the facility must be reported to the prescribed authority immediately in Form I and also included in the annual report.", "keywords": ["accident reporting", "Form I", "prescribed authority", "annual report"], "severity": "High", "active": true}, {"id": "RULE-016", "section": "Rule 4(p)", "requirement": "Occupier must make the annual report available on the facility's website. Facilities without a website must establish one within two years from the date of notification.", "keywords": ["annual report", "website", "publication", "transparency"], "severity": "Medium", "active": true}, {"id": "RULE-017", "section": "Rule 4(q)", "requirement": "Occupier must inform the prescribed authority if the CBMWTF operator does not collect bio-medical waste within the stipulated time.", "keywords": ["CBMWTF", "collection", "non-compliance", "prescribed authority"], "severity": "High", "active": true}, {"id": "RULE-018", "section": "Rule 4(r)", "requirement": "Occupier must establish a committee to review and monitor bio-medical waste management activities, meeting at least once every six months. Facilities with fewer than 30 beds must designate a qualified person instead. Minutes of meetings must be submitted with the annual report.", "keywords": ["committee", "review", "monitoring", "meetings", "qualified person"], "severity": "Medium", "active": true}, {"id": "RULE-019", "section": "Rule 4(s)", "requirement": "All records related to operation of incinerators, autoclaves, and other treatment equipment must be maintained for a minimum period of five years.", "keywords": ["records", "incineration", "autoclave", "retention", "five years"], "severity": "High", "active": true}, {"id": "RULE-020", "section": "Rule 4(t)", "requirement": "Existing incinerators must be upgraded to meet Schedule II standards for retention time and Dioxin/Furans emission limits within two years from the date of notification.", "keywords": ["incinerator", "upgrade", "Schedule II", "Dioxin", "Furans", "emission"], "severity": "High", "active": true}, {"id": "RULE-021", "section": "Rule 5(a)", "requirement": "CBMWTF operator must handle collected bio-medical waste without any adverse effect to human health or the environment, in accordance with the rules and guidelines.", "keywords": ["CBMWTF", "operator", "handling", "health", "environment"], "severity": "Critical", "active": true}, {"id": "RULE-022", "section": "Rule 5(b)", "requirement": "CBMWTF operator must ensure timely collection of bio-medical waste from the occupier as per the agreed schedule.", "keywords": ["CBMWTF", "collection", "timely", "schedule"], "severity": "High", "active": true}, {"id": "RULE-023", "section": "Rule 5(c)", "requirement": "CBMWTF operator must establish bar-coding and GPS tracking systems for bio-medical waste transport within one year from the date of notification.", "keywords": ["CBMWTF", "bar-code", "GPS", "tracking", "transport"], "severity": "Medium", "active": true}, {"id": "RULE-024", "section": "Rule 5(d)", "requirement": "CBMWTF operator must inform the prescribed authority about occupiers who do not comply with bio-medical waste segregation or handling requirements.", "keywords": ["CBMWTF", "non-compliance", "occupier", "prescribed authority"], "severity": "High", "active": true}, {"id": "RULE-025", "section": "Rule 5(e)", "requirement": "CBMWTF operator must provide training to all workers at the time of induction and at least once every year on bio-medical waste handling and safety procedures.", "keywords": ["CBMWTF", "training", "workers", "induction", "annual"], "severity": "High", "active": true}, {"id": "RULE-026", "section": "Rule 5(f)", "requirement": "CBMWTF operator must assist the occupier in providing training on bio-medical waste management procedures.", "keywords": ["CBMWTF", "training assistance", "occupier"], "severity": "Low", "active": true}, {"id": "RULE-027", "section": "Rule 5(g)", "requirement": "CBMWTF operator must conduct medical examination and immunisation of all workers handling bio-medical waste at the time of induction and at least once every year.", "keywords": ["CBMWTF", "medical examination", "immunisation", "workers", "annual"], "severity": "High", "active": true}, {"id": "RULE-028", "section": "Rule 5(h)", "requirement": "CBMWTF operator must ensure occupational safety of all workers by providing appropriate personal protective equipment (PPE).", "keywords": ["CBMWTF", "occupational safety", "PPE", "workers"], "severity": "Critical", "active": true}, {"id": "RULE-029", "section": "Rule 5(i)", "requirement": "CBMWTF operator must report any major accident to the prescribed authority immediately in Form I.", "keywords": ["CBMWTF", "accident reporting", "Form I"], "severity": "High", "active": true}, {"id": "RULE-030", "section": "Rule 5(j)", "requirement": "CBMWTF operator must maintain a detailed log book for each treatment equipment recording weight of waste treated, categories, time, date, duration, and operating hours.", "keywords": ["CBMWTF", "log book", "treatment equipment", "weight", "categories", "records"], "severity": "High", "active": true}, {"id": "RULE-031", "section": "Rule 5(k)", "requirement": "CBMWTF operator must allow the occupier to observe the treatment and disposal process of bio-medical waste upon request.", "keywords": ["CBMWTF", "observation", "transparency", "occupier"], "severity": "Low", "active": true}, {"id": "RULE-032", "section": "Rule 5(l)", "requirement": "CBMWTF operator must display authorisation details, treatment records, and annual report on the facility's website.", "keywords": ["CBMWTF", "website", "authorisation", "transparency", "annual report"], "severity": "Medium", "active": true}, {"id": "RULE-033", "section": "Rule 5(m)", "requirement": "CBMWTF operator must give treated recyclable waste only to authorised recyclers holding valid consent and authorisation from the prescribed authority.", "keywords": ["CBMWTF", "recyclables", "authorised recycler", "consent"], "severity": "High", "active": true}, {"id": "RULE-034", "section": "Rule 5(n)", "requirement": "CBMWTF operator must supply non-chlorinated plastic bags to the occupier for bio-medical waste segregation.", "keywords": ["CBMWTF", "non-chlorinated", "plastic bags", "supply"], "severity": "Medium", "active": true}, {"id": "RULE-035", "section": "Rule 5(o)", "requirement": "CBMWTF operator must collect bio-medical waste from occupiers on holidays and non-working days as well.", "keywords": ["CBMWTF", "collection", "holidays", "continuous service"], "severity": "High", "active": true}, {"id": "RULE-036", "section": "Rule 5(p)", "requirement": "CBMWTF operator must maintain all operation records for a minimum period of five years.", "keywords": ["CBMWTF", "records", "retention", "five years"], "severity": "High", "active": true}, {"id": "RULE-037", "section": "Rule 5(q)", "requirement": "CBMWTF operator must upgrade existing incinerators to meet Schedule II standards for emissions and operating parameters within two years from notification.", "keywords": ["CBMWTF", "incinerator", "upgrade", "Schedule II"], "severity": "High", "active": true}, {"id": "RULE-038", "section": "Rule 7(1)", "requirement": "All bio-medical waste must be treated and disposed of in accordance with Schedule I categories and must comply with the treatment standards specified in Schedule II.", "keywords": ["treatment", "disposal", "Schedule I", "Schedule II", "standards"], "severity": "Critical", "active": true}, {"id": "RULE-039", "section": "Rule 7(2)", "requirement": "Occupier must hand over segregated bio-medical waste as per Schedule I to the CBMWTF operator. Laboratory and highly infectious waste must be pre-treated before handover.", "keywords": ["handover", "segregation", "CBMWTF", "pre-treatment", "infectious waste"], "severity": "Critical", "active": true}, {"id": "RULE-040", "section": "Rule 7(3)", "requirement": "No occupier shall set up on-site treatment and disposal facility if a CBMWTF is available within a 75 kilometre radius.", "keywords": ["on-site treatment", "CBMWTF", "75 km", "proximity"], "severity": "High", "active": true}, {"id": "RULE-041", "section": "Rule 7(8)", "requirement": "Chlorinated plastic bags must be phased out within two years. All plastic bags used for bio-medical waste must comply with Bureau of Indian Standards (BIS) specifications.", "keywords": ["chlorinated plastic", "phase out", "BIS", "plastic bags"], "severity": "Medium", "active": true}, {"id": "RULE-042", "section": "Rule 7(9)", "requirement": "Treated recyclable bio-medical waste must be given only to authorised recyclers holding valid authorisation from the prescribed authority.", "keywords": ["recyclables", "authorised recycler", "authorisation"], "severity": "High", "active": true}, {"id": "RULE-043", "section": "Rule 7(10)", "requirement": "Occupier/operator must maintain records of all recyclable waste sold or auctioned, including details of the authorised recycler, and submit these records in the annual report.", "keywords": ["recyclable waste", "records", "sale", "auction", "annual report"], "severity": "High", "active": true}, {"id": "RULE-044", "section": "Rule 8(1)", "requirement": "No untreated bio-medical waste shall be mixed with other wastes including municipal solid waste.", "keywords": ["untreated waste", "mixing", "municipal waste", "segregation"], "severity": "Critical", "active": true}, {"id": "RULE-045", "section": "Rule 8(2)", "requirement": "Bio-medical waste must be segregated into containers and bags at the point of generation itself, in accordance with Schedule I colour coding and categories.", "keywords": ["segregation", "point of generation", "containers", "bags", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-046", "section": "Rule 8(3)", "requirement": "All containers and bags containing bio-medical waste must be labelled in accordance with Schedule IV specifications.", "keywords": ["labelling", "containers", "bags", "Schedule IV"], "severity": "High", "active": true}, {"id": "RULE-047", "section": "Rule 8(4)", "requirement": "Bar-code and GPS tracking system must be established for all bio-medical waste bags and containers within one year from notification.", "keywords": ["bar-code", "GPS", "tracking", "bags", "containers"], "severity": "Medium", "active": true}, {"id": "RULE-048", "section": "Rule 8(5)", "requirement": "Bio-medical waste must be transported only in vehicles bearing labels as specified in Schedule IV.", "keywords": ["transport", "vehicles", "labels", "Schedule IV"], "severity": "High", "active": true}, {"id": "RULE-049", "section": "Rule 8(6)", "requirement": "Transport vehicles carrying bio-medical waste must comply with conditions laid down by SPCB and the Motor Vehicles Act, 1988.", "keywords": ["transport", "vehicles", "SPCB", "Motor Vehicles Act"], "severity": "High", "active": true}, {"id": "RULE-050", "section": "Rule 8(7)", "requirement": "Untreated anatomical waste, soiled waste, and biotechnology waste must not be stored beyond 48 hours. If storage beyond 48 hours is unavoidable, the prescribed authority must be informed.", "keywords": ["storage", "48 hours", "anatomical waste", "soiled waste", "biotechnology waste"], "severity": "Critical", "active": true}, {"id": "RULE-051", "section": "Rule 8(8)", "requirement": "Microbiology, biotechnology, and clinical laboratory waste must be pre-treated to achieve either Log 6 level of sterilisation (6 log10 reduction) or Log 4 level of disinfection (4 log10 reduction) as per WHO guidelines before disposal.", "keywords": ["microbiology waste", "pre-treatment", "Log 6", "Log 4", "sterilisation", "disinfection", "WHO"], "severity": "Critical", "active": true}, {"id": "RULE-052", "section": "Rule 10", "requirement": "Every occupier and CBMWTF operator must obtain authorisation by applying to the prescribed authority in Form II. The prescribed authority shall grant authorisation in Form III.", "keywords": ["authorisation", "Form II", "Form III", "prescribed authority"], "severity": "High", "active": true}, {"id": "RULE-053", "section": "Rule 13", "requirement": "Every occupier and CBMWTF operator must submit an annual report in Form IV to the prescribed authority by 30th June of every year.", "keywords": ["annual report", "Form IV", "30 June", "submission"], "severity": "High", "active": true}, {"id": "RULE-054", "section": "Rule 14", "requirement": "All records related to bio-medical waste management must be maintained for a period of five years and shall be subject to inspection by the prescribed authority at any time.", "keywords": ["records", "five years", "retention", "inspection"], "severity": "High", "active": true}, {"id": "RULE-055", "section": "Rule 15", "requirement": "In case of any major accident at the facility, the occupier/operator must intimate the prescribed authority immediately and submit a written report in Form I within 24 hours of the accident.", "keywords": ["accident", "immediate reporting", "24 hours", "Form I", "written report"], "severity": "Critical", "active": true}, {"id": "RULE-056", "section": "Rule 18", "requirement": "The occupier or operator shall be liable for all damages to the environment or public health caused due to improper handling, treatment, or disposal of bio-medical waste.", "keywords": ["liability", "damages", "environment", "public health"], "severity": "Critical", "active": true}, {"id": "RULE-057", "section": "Schedule I - Yellow Category", "requirement": "Anatomical waste, soiled waste, expired/discarded medicines, chemical waste (liquid), chemical waste (solid), discarded linen/mattresses/bedding contaminated with blood/body fluids, and microbiology/biotechnology/clinical laboratory waste must be collected in yellow coloured non-chlorinated plastic bags.", "keywords": ["yellow bag", "anatomical waste", "soiled waste", "expired medicines", "chemical waste", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-058", "section": "Schedule I - Red Category", "requirement": "Contaminated recyclable waste including tubing, bottles, intravenous sets, catheters, urine bags, syringes (without needles), gloves, and similar items must be collected in red coloured non-chlorinated plastic bags.", "keywords": ["red bag", "recyclable waste", "contaminated", "tubing", "syringes", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-059", "section": "Schedule I - White Category", "requirement": "Waste sharps including needles, syringes with fixed needles, scalpels, blades, and any contaminated sharp objects must be collected in white translucent, puncture-proof, leak-proof, tamper-proof containers.", "keywords": ["white container", "sharps", "needles", "puncture-proof", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-060", "section": "Schedule I - Blue Category", "requirement": "Glassware including broken or discarded contaminated glass, metallic body implants, and similar items must be collected in puncture-proof and leak-proof cardboard boxes with blue coloured marking.", "keywords": ["blue marking", "glassware", "cardboard box", "metallic implants", "Schedule I"], "severity": "Critical", "active": true}, {"id": "RULE-061", "section": "Schedule II - Incineration Standards", "requirement": "Incinerators must achieve a minimum combustion efficiency of 99%, with primary chamber temperature at least 800\u00b0C, secondary chamber temperature at least 1050\u00b0C, and minimum gas residence time of 2 seconds in the secondary chamber.", "keywords": ["incineration", "combustion efficiency", "800\u00b0C", "1050\u00b0C", "residence time", "Schedule II"], "severity": "Critical", "active": true}, {"id": "RULE-062", "section": "Schedule II - Stack Height", "requirement": "The stack height of the incinerator must be a minimum of 30 metres above ground level.", "keywords": ["stack height", "30 metres", "incinerator", "Schedule II"], "severity": "High", "active": true}, {"id": "RULE-063", "section": "Schedule II - Autoclave Standards", "requirement": "Autoclaves must operate at validated parameters: gravity flow at 121\u00b0C/15 psi for 60 minutes, or 135\u00b0C/31 psi for 45 minutes, or 149\u00b0C/52 psi for 30 minutes to achieve required sterilisation.", "keywords": ["autoclave", "sterilisation", "121\u00b0C", "135\u00b0C", "149\u00b0C", "pressure", "Schedule II"], "severity": "Critical", "active": true}, {"id": "RULE-064", "section": "Schedule II - Emission Monitoring", "requirement": "Quarterly emission monitoring must be conducted through a laboratory approved by the SPCB or CPCB, and a continuous emission monitoring system must be installed for the incinerator.", "keywords": ["emission monitoring", "quarterly", "SPCB", "CPCB", "continuous monitoring", "Schedule II"], "severity": "High", "active": true}]};
-    const checklistData = {"framework": "Bio-Medical Waste Management Rules, 2016", "generated_at": "2026-05-01T14:30:00Z", "coverage_note": "64 rules mapped across 18 checklist items. All rules are covered. RULE-026 (CBMWTF training assistance to occupier) and RULE-031 (CBMWTF transparency \u2014 allowing occupier to observe treatment) are low-severity procedural obligations included under CHK-004 and CHK-011 respectively for completeness.", "checklist": [{"id": "CHK-001", "evidence_item": "Authorisation and registration documents", "evidence_type": "Document", "responsible_party": "Administration / Compliance Officer", "rule_ids": ["RULE-001", "RULE-021", "RULE-052"], "description": "Valid authorisation from the State Pollution Control Board or Pollution Control Committee (Form III), original application records (Form II), proof of consent-to-operate synchronisation for bedded facilities, and evidence of compliance with general duty to handle bio-medical waste without adverse effects to health or environment."}, {"id": "CHK-002", "evidence_item": "Waste segregation and colour-coded storage records", "evidence_type": "Record", "responsible_party": "Infection Control / Nursing / Housekeeping", "rule_ids": ["RULE-002", "RULE-006", "RULE-038", "RULE-039", "RULE-044", "RULE-045", "RULE-057", "RULE-058", "RULE-059", "RULE-060"], "description": "Inspection records and photographic evidence of waste segregation at point of generation into correct colour-coded bags and containers as per Schedule I \u2014 yellow (anatomical, soiled, chemical, lab waste), red (contaminated recyclables), white translucent (sharps in puncture-proof containers), blue (glassware in cardboard boxes). Evidence that untreated BMW is never mixed with other waste, and that segregated waste is handed over to CBMWTF per Schedule I categories."}, {"id": "CHK-003", "evidence_item": "Pre-treatment and disinfection records for lab and microbiological waste", "evidence_type": "Record", "responsible_party": "Laboratory / Infection Control", "rule_ids": ["RULE-003", "RULE-051"], "description": "Autoclave and disinfection logs showing pre-treatment of laboratory waste, microbiological waste, blood samples, and blood bags through disinfection or sterilisation as per WHO or NACO guidelines. Evidence that microbiology and clinical laboratory waste achieves Log 6 sterilisation or Log 4 disinfection levels before packing and sending to CBMWTF."}, {"id": "CHK-004", "evidence_item": "Training records for healthcare workers on BMW management", "evidence_type": "Record", "responsible_party": "HR / Training Department / Infection Control", "rule_ids": ["RULE-007", "RULE-025", "RULE-026"], "description": "Training schedule and attendance registers showing induction training for all new healthcare workers and annual refresher training thereafter on bio-medical waste handling. Records must include: number of training programmes conducted, number of personnel trained, number of personnel who have not yet undergone training. For CBMWTF operators: evidence of worker training at induction and annually, and records of assistance provided to occupiers in their training programmes."}, {"id": "CHK-005", "evidence_item": "Immunisation records for BMW handlers", "evidence_type": "Record", "responsible_party": "Occupational Health / HR", "rule_ids": ["RULE-008", "RULE-027"], "description": "Vaccination records demonstrating that all healthcare workers and others involved in handling bio-medical waste have been immunised against Hepatitis B and Tetanus as per the National Immunisation Policy or Ministry of Health and Family Welfare guidelines. For CBMWTF operators: equivalent immunisation records for all facility workers."}, {"id": "CHK-006", "evidence_item": "Health check-up and occupational safety records", "evidence_type": "Record", "responsible_party": "Occupational Health / Safety Officer", "rule_ids": ["RULE-012", "RULE-013", "RULE-028"], "description": "Annual health check-up records for all healthcare workers and waste handlers conducted at induction and at least once a year thereafter. PPE procurement records, distribution logs, and compliance audit evidence showing that appropriate and adequate personal protective equipment is provided to all personnel involved in bio-medical waste handling \u2014 covering both occupier facilities and CBMWTF operations."}, {"id": "CHK-007", "evidence_item": "Bar-code and GPS tracking system documentation", "evidence_type": "Document", "responsible_party": "IT / Administration / CBMWTF Operations", "rule_ids": ["RULE-009", "RULE-023", "RULE-047"], "description": "Implementation records for the bar-code system applied to all bags and containers of bio-medical waste leaving the premises, established within one year from notification. GPS tracking system documentation for waste transport vehicles. Evidence of both occupier-side bar-coding and CBMWTF-side bar-code and GPS systems being operational."}, {"id": "CHK-008", "evidence_item": "BMW management register and website publication records", "evidence_type": "Record", "responsible_party": "Infection Control / IT / Administration", "rule_ids": ["RULE-014", "RULE-016", "RULE-032"], "description": "Day-to-day bio-medical waste management register updated with waste generated by category and colour coding as per Schedule I. Screenshots or evidence of monthly waste data displayed on the facility website. For CBMWTF operators: evidence that authorisation details, treatment information, and annual reports are published on the facility website. Evidence that the facility has established a website within two years of notification."}, {"id": "CHK-009", "evidence_item": "Accident reporting records and emergency procedures", "evidence_type": "Record", "responsible_party": "Safety Officer / Administration", "rule_ids": ["RULE-015", "RULE-029", "RULE-055"], "description": "Completed Form I for any major accidents (including fire hazards, blasts, truck topplings, accidental waste release) reported to the prescribed authority immediately with written report within 24 hours. Nil reports if no accidents occurred. Remedial action documentation. Emergency response plan and procedures. All accident records must also be included in the annual report."}, {"id": "CHK-010", "evidence_item": "Annual report (Form IV) and BMW management committee records", "evidence_type": "Document", "responsible_party": "Administration / Compliance Officer", "rule_ids": ["RULE-018", "RULE-053"], "description": "Filed Form IV annual report submitted to the prescribed authority on or before 30th June each year covering the preceding January-December period. Minutes of BMW management committee meetings held at least once every six months. For healthcare establishments with fewer than 30 beds: designation letter of the qualified person responsible for reviewing and monitoring BMW activities. Annual report made available on the facility website."}, {"id": "CHK-011", "evidence_item": "Treatment equipment operation and maintenance records", "evidence_type": "Record", "responsible_party": "Engineering / CBMWTF Operations", "rule_ids": ["RULE-019", "RULE-030", "RULE-031", "RULE-036", "RULE-054"], "description": "Operation records for all treatment equipment (incinerators, autoclaves, microwaves, hydroclaves, shredders) maintained for a minimum of five years. CBMWTF log books recording: weight of each batch, waste categories treated, time and date of treatment cycle, duration, and total hours of operation. All records subject to inspection by the prescribed authority or Ministry of Environment at any time."}, {"id": "CHK-012", "evidence_item": "Incineration and emission compliance records", "evidence_type": "Record", "responsible_party": "CBMWTF Operations / Environmental Compliance", "rule_ids": ["RULE-020", "RULE-037", "RULE-061", "RULE-062", "RULE-064"], "description": "Quarterly stack gaseous emission monitoring reports from a laboratory approved under the Environment (Protection) Act, 1986. Continuous emission monitoring system data transmitted to SPCB/PCC and CPCB servers. Records demonstrating: combustion efficiency at least 99%, primary chamber temperature at least 800 degrees C, secondary chamber at least 1050 degrees C with at least 2 second gas residence time, stack height at least 30 metres. Annual dioxin and furans monitoring reports (limit: 0.1 ng TEQ/Nm3 at 11% O2). Evidence of incinerator upgrades completed within two years of notification where required."}, {"id": "CHK-013", "evidence_item": "Liquid waste treatment and effluent discharge records", "evidence_type": "Record", "responsible_party": "Engineering / Environmental Compliance", "rule_ids": ["RULE-010", "RULE-011"], "description": "ETP operation records and effluent quality test reports demonstrating compliance with Schedule II liquid waste standards: pH 6.5-9.0, suspended solids 100 mg/l or less, oil and grease 10 mg/l or less, BOD 30 mg/l or less, COD 250 mg/l or less, and bio-assay test (90% fish survival after 96 hours). Records of chemical liquid waste segregation at source and pre-treatment or neutralisation before mixing with other effluent."}, {"id": "CHK-014", "evidence_item": "Transportation and labelling compliance records", "evidence_type": "Record", "responsible_party": "Transport / CBMWTF Operations", "rule_ids": ["RULE-046", "RULE-048", "RULE-049"], "description": "Evidence that all bio-medical waste containers and bags are labelled in accordance with Schedule IV (biohazard symbol, cytotoxic hazard symbol as applicable). Transport vehicle compliance documents showing Schedule IV Part A labels and Part B transport information (date, waste category, quantity, sender/receiver details). Vehicle compliance with SPCB conditions and Motor Vehicles Act, 1988 requirements for transporting infectious waste."}, {"id": "CHK-015", "evidence_item": "Waste storage duration compliance evidence", "evidence_type": "Record", "responsible_party": "Housekeeping / Infection Control / CBMWTF", "rule_ids": ["RULE-017", "RULE-022", "RULE-035", "RULE-050"], "description": "Waste collection logs and timestamps demonstrating that untreated human anatomical waste, animal anatomical waste, soiled waste, and biotechnology waste is not stored beyond 48 hours. Exception reports with reasons submitted to the prescribed authority where storage exceeded 48 hours. Evidence of CBMWTF timely collection including on holidays and non-working days. Records of notifications sent to prescribed authority when CBMWTF failed to collect on time."}, {"id": "CHK-016", "evidence_item": "Recyclable waste management and disposal records", "evidence_type": "Record", "responsible_party": "Administration / CBMWTF Operations", "rule_ids": ["RULE-033", "RULE-042", "RULE-043"], "description": "Records of treated recyclable bio-medical waste (plastics, glass) given to recyclers holding valid consent, authorisation, or registration from the respective SPCB or PCC. Auction and sale records for recyclable waste, submitted to the prescribed authority as part of the annual report. Verification records confirming recycler authorisation status. Records open for inspection by prescribed authorities."}, {"id": "CHK-017", "evidence_item": "Chlorinated plastic phase-out and BIS compliance evidence", "evidence_type": "Document", "responsible_party": "Procurement / Administration", "rule_ids": ["RULE-004", "RULE-034", "RULE-041"], "description": "Procurement records demonstrating use of non-chlorinated plastic bags for bio-medical waste segregation and transport. BIS compliance certificates or test reports for plastic bags used. Evidence of completed phase-out of chlorinated plastic bags, gloves, and blood bags within the two-year timeline. CBMWTF supply records for non-chlorinated coloured bags provided to occupiers."}, {"id": "CHK-018", "evidence_item": "CBMWTF contract, collection agreement, and service compliance", "evidence_type": "Document", "responsible_party": "Administration", "rule_ids": ["RULE-005", "RULE-024", "RULE-040", "RULE-056", "RULE-063"], "description": "Contract or service agreement with the CBMWTF operator specifying collection schedule, waste categories covered, and service level commitments. Evidence that no on-site treatment facility has been established where a CBMWTF operates within 75 km. Records of non-BMW solid waste disposed per respective waste management rules. Acknowledgement of liability for environmental or public health damages from improper handling. CBMWTF operator records of occupier non-compliance notifications to prescribed authority. Autoclave validation records demonstrating compliance with Schedule II sterilisation standards."}]};
+    const rulesData = { "framework": "Bio-Medical Waste Management Rules, 2016", "extracted_at": "2026-05-01T14:00:00Z", "source_file": "Bio-medical_Waste_Management_Rules_2016.pdf", "rules": [{ "id": "RULE-001", "section": "Rule 4(a)", "requirement": "Every occupier must handle bio-medical waste in a manner that does not cause any adverse effect to human health or the environment.", "keywords": ["handling", "health", "environment", "occupier"], "severity": "Critical", "active": true }, { "id": "RULE-002", "section": "Rule 4(b)", "requirement": "Occupier must provide safe, ventilated, and secured storage area for segregated bio-medical waste in coloured bags/containers as specified in Schedule I.", "keywords": ["storage", "segregation", "coloured bags", "ventilation", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-003", "section": "Rule 4(c)", "requirement": "Occupier must pre-treat laboratory waste, microbiological waste, blood samples, and blood bags through disinfection or sterilisation as per WHO/NACO guidelines before handing over to CBMWTF.", "keywords": ["pre-treatment", "disinfection", "sterilisation", "lab waste", "blood bags", "WHO", "NACO"], "severity": "Critical", "active": true }, { "id": "RULE-004", "section": "Rule 4(d)", "requirement": "Occupier must phase out use of chlorinated plastic bags, gloves, and blood bags within two years from the date of notification of these rules.", "keywords": ["chlorinated plastic", "phase out", "gloves", "blood bags"], "severity": "Medium", "active": true }, { "id": "RULE-005", "section": "Rule 4(e)", "requirement": "Non-bio-medical solid waste generated within the premises must be disposed of in accordance with the respective waste management rules (e.g., Solid Waste Management Rules, 2016).", "keywords": ["non-BMW", "solid waste", "disposal", "municipal waste"], "severity": "High", "active": true }, { "id": "RULE-006", "section": "Rule 4(f)", "requirement": "Treated bio-medical waste must not be mixed with municipal solid waste at any point.", "keywords": ["mixing", "treated waste", "municipal solid waste", "segregation"], "severity": "Critical", "active": true }, { "id": "RULE-007", "section": "Rule 4(g)", "requirement": "Occupier must provide training to all healthcare workers and others involved in handling bio-medical waste at the time of induction and thereafter at least once every year. Training details must be included in the annual report.", "keywords": ["training", "healthcare workers", "induction", "annual", "annual report"], "severity": "High", "active": true }, { "id": "RULE-008", "section": "Rule 4(h)", "requirement": "All healthcare workers and others involved in handling bio-medical waste must be immunised against Hepatitis B and Tetanus as per the National Immunisation Policy.", "keywords": ["immunisation", "Hepatitis B", "Tetanus", "healthcare workers"], "severity": "Critical", "active": true }, { "id": "RULE-009", "section": "Rule 4(i)", "requirement": "Occupier must establish a bar-code system for bags and containers containing bio-medical waste within one year from the date of notification.", "keywords": ["bar-code", "tracking", "bags", "containers"], "severity": "Medium", "active": true }, { "id": "RULE-010", "section": "Rule 4(j)", "requirement": "Liquid chemical waste must be segregated at source and pre-treated or neutralised before mixing with other effluent generated from the healthcare facility.", "keywords": ["liquid chemical waste", "segregation", "pre-treatment", "neutralisation", "effluent"], "severity": "Critical", "active": true }, { "id": "RULE-011", "section": "Rule 4(k)", "requirement": "All liquid waste generated from the healthcare facility must be treated and disposed of in compliance with the Water (Prevention and Control of Pollution) Act, 1974.", "keywords": ["liquid waste", "Water Act", "effluent treatment", "disposal"], "severity": "High", "active": true }, { "id": "RULE-012", "section": "Rule 4(l)", "requirement": "Occupier must ensure occupational safety of all healthcare workers and others involved in handling bio-medical waste by providing appropriate personal protective equipment (PPE).", "keywords": ["occupational safety", "PPE", "protective equipment", "healthcare workers"], "severity": "Critical", "active": true }, { "id": "RULE-013", "section": "Rule 4(m)", "requirement": "Occupier must conduct health check-up of all workers involved in handling bio-medical waste at the time of induction and thereafter once every year, and maintain records of such check-ups.", "keywords": ["health check-up", "medical examination", "workers", "records", "annual"], "severity": "High", "active": true }, { "id": "RULE-014", "section": "Rule 4(n)", "requirement": "Occupier must maintain and update a daily bio-medical waste management register and display monthly records on the facility's website, categorised as per Schedule I colour coding.", "keywords": ["register", "daily records", "website", "monthly display", "Schedule I"], "severity": "High", "active": true }, { "id": "RULE-015", "section": "Rule 4(o)", "requirement": "Any major accident occurring at the facility must be reported to the prescribed authority immediately in Form I and also included in the annual report.", "keywords": ["accident reporting", "Form I", "prescribed authority", "annual report"], "severity": "High", "active": true }, { "id": "RULE-016", "section": "Rule 4(p)", "requirement": "Occupier must make the annual report available on the facility's website. Facilities without a website must establish one within two years from the date of notification.", "keywords": ["annual report", "website", "publication", "transparency"], "severity": "Medium", "active": true }, { "id": "RULE-017", "section": "Rule 4(q)", "requirement": "Occupier must inform the prescribed authority if the CBMWTF operator does not collect bio-medical waste within the stipulated time.", "keywords": ["CBMWTF", "collection", "non-compliance", "prescribed authority"], "severity": "High", "active": true }, { "id": "RULE-018", "section": "Rule 4(r)", "requirement": "Occupier must establish a committee to review and monitor bio-medical waste management activities, meeting at least once every six months. Facilities with fewer than 30 beds must designate a qualified person instead. Minutes of meetings must be submitted with the annual report.", "keywords": ["committee", "review", "monitoring", "meetings", "qualified person"], "severity": "Medium", "active": true }, { "id": "RULE-019", "section": "Rule 4(s)", "requirement": "All records related to operation of incinerators, autoclaves, and other treatment equipment must be maintained for a minimum period of five years.", "keywords": ["records", "incineration", "autoclave", "retention", "five years"], "severity": "High", "active": true }, { "id": "RULE-020", "section": "Rule 4(t)", "requirement": "Existing incinerators must be upgraded to meet Schedule II standards for retention time and Dioxin/Furans emission limits within two years from the date of notification.", "keywords": ["incinerator", "upgrade", "Schedule II", "Dioxin", "Furans", "emission"], "severity": "High", "active": true }, { "id": "RULE-021", "section": "Rule 5(a)", "requirement": "CBMWTF operator must handle collected bio-medical waste without any adverse effect to human health or the environment, in accordance with the rules and guidelines.", "keywords": ["CBMWTF", "operator", "handling", "health", "environment"], "severity": "Critical", "active": true }, { "id": "RULE-022", "section": "Rule 5(b)", "requirement": "CBMWTF operator must ensure timely collection of bio-medical waste from the occupier as per the agreed schedule.", "keywords": ["CBMWTF", "collection", "timely", "schedule"], "severity": "High", "active": true }, { "id": "RULE-023", "section": "Rule 5(c)", "requirement": "CBMWTF operator must establish bar-coding and GPS tracking systems for bio-medical waste transport within one year from the date of notification.", "keywords": ["CBMWTF", "bar-code", "GPS", "tracking", "transport"], "severity": "Medium", "active": true }, { "id": "RULE-024", "section": "Rule 5(d)", "requirement": "CBMWTF operator must inform the prescribed authority about occupiers who do not comply with bio-medical waste segregation or handling requirements.", "keywords": ["CBMWTF", "non-compliance", "occupier", "prescribed authority"], "severity": "High", "active": true }, { "id": "RULE-025", "section": "Rule 5(e)", "requirement": "CBMWTF operator must provide training to all workers at the time of induction and at least once every year on bio-medical waste handling and safety procedures.", "keywords": ["CBMWTF", "training", "workers", "induction", "annual"], "severity": "High", "active": true }, { "id": "RULE-026", "section": "Rule 5(f)", "requirement": "CBMWTF operator must assist the occupier in providing training on bio-medical waste management procedures.", "keywords": ["CBMWTF", "training assistance", "occupier"], "severity": "Low", "active": true }, { "id": "RULE-027", "section": "Rule 5(g)", "requirement": "CBMWTF operator must conduct medical examination and immunisation of all workers handling bio-medical waste at the time of induction and at least once every year.", "keywords": ["CBMWTF", "medical examination", "immunisation", "workers", "annual"], "severity": "High", "active": true }, { "id": "RULE-028", "section": "Rule 5(h)", "requirement": "CBMWTF operator must ensure occupational safety of all workers by providing appropriate personal protective equipment (PPE).", "keywords": ["CBMWTF", "occupational safety", "PPE", "workers"], "severity": "Critical", "active": true }, { "id": "RULE-029", "section": "Rule 5(i)", "requirement": "CBMWTF operator must report any major accident to the prescribed authority immediately in Form I.", "keywords": ["CBMWTF", "accident reporting", "Form I"], "severity": "High", "active": true }, { "id": "RULE-030", "section": "Rule 5(j)", "requirement": "CBMWTF operator must maintain a detailed log book for each treatment equipment recording weight of waste treated, categories, time, date, duration, and operating hours.", "keywords": ["CBMWTF", "log book", "treatment equipment", "weight", "categories", "records"], "severity": "High", "active": true }, { "id": "RULE-031", "section": "Rule 5(k)", "requirement": "CBMWTF operator must allow the occupier to observe the treatment and disposal process of bio-medical waste upon request.", "keywords": ["CBMWTF", "observation", "transparency", "occupier"], "severity": "Low", "active": true }, { "id": "RULE-032", "section": "Rule 5(l)", "requirement": "CBMWTF operator must display authorisation details, treatment records, and annual report on the facility's website.", "keywords": ["CBMWTF", "website", "authorisation", "transparency", "annual report"], "severity": "Medium", "active": true }, { "id": "RULE-033", "section": "Rule 5(m)", "requirement": "CBMWTF operator must give treated recyclable waste only to authorised recyclers holding valid consent and authorisation from the prescribed authority.", "keywords": ["CBMWTF", "recyclables", "authorised recycler", "consent"], "severity": "High", "active": true }, { "id": "RULE-034", "section": "Rule 5(n)", "requirement": "CBMWTF operator must supply non-chlorinated plastic bags to the occupier for bio-medical waste segregation.", "keywords": ["CBMWTF", "non-chlorinated", "plastic bags", "supply"], "severity": "Medium", "active": true }, { "id": "RULE-035", "section": "Rule 5(o)", "requirement": "CBMWTF operator must collect bio-medical waste from occupiers on holidays and non-working days as well.", "keywords": ["CBMWTF", "collection", "holidays", "continuous service"], "severity": "High", "active": true }, { "id": "RULE-036", "section": "Rule 5(p)", "requirement": "CBMWTF operator must maintain all operation records for a minimum period of five years.", "keywords": ["CBMWTF", "records", "retention", "five years"], "severity": "High", "active": true }, { "id": "RULE-037", "section": "Rule 5(q)", "requirement": "CBMWTF operator must upgrade existing incinerators to meet Schedule II standards for emissions and operating parameters within two years from notification.", "keywords": ["CBMWTF", "incinerator", "upgrade", "Schedule II"], "severity": "High", "active": true }, { "id": "RULE-038", "section": "Rule 7(1)", "requirement": "All bio-medical waste must be treated and disposed of in accordance with Schedule I categories and must comply with the treatment standards specified in Schedule II.", "keywords": ["treatment", "disposal", "Schedule I", "Schedule II", "standards"], "severity": "Critical", "active": true }, { "id": "RULE-039", "section": "Rule 7(2)", "requirement": "Occupier must hand over segregated bio-medical waste as per Schedule I to the CBMWTF operator. Laboratory and highly infectious waste must be pre-treated before handover.", "keywords": ["handover", "segregation", "CBMWTF", "pre-treatment", "infectious waste"], "severity": "Critical", "active": true }, { "id": "RULE-040", "section": "Rule 7(3)", "requirement": "No occupier shall set up on-site treatment and disposal facility if a CBMWTF is available within a 75 kilometre radius.", "keywords": ["on-site treatment", "CBMWTF", "75 km", "proximity"], "severity": "High", "active": true }, { "id": "RULE-041", "section": "Rule 7(8)", "requirement": "Chlorinated plastic bags must be phased out within two years. All plastic bags used for bio-medical waste must comply with Bureau of Indian Standards (BIS) specifications.", "keywords": ["chlorinated plastic", "phase out", "BIS", "plastic bags"], "severity": "Medium", "active": true }, { "id": "RULE-042", "section": "Rule 7(9)", "requirement": "Treated recyclable bio-medical waste must be given only to authorised recyclers holding valid authorisation from the prescribed authority.", "keywords": ["recyclables", "authorised recycler", "authorisation"], "severity": "High", "active": true }, { "id": "RULE-043", "section": "Rule 7(10)", "requirement": "Occupier/operator must maintain records of all recyclable waste sold or auctioned, including details of the authorised recycler, and submit these records in the annual report.", "keywords": ["recyclable waste", "records", "sale", "auction", "annual report"], "severity": "High", "active": true }, { "id": "RULE-044", "section": "Rule 8(1)", "requirement": "No untreated bio-medical waste shall be mixed with other wastes including municipal solid waste.", "keywords": ["untreated waste", "mixing", "municipal waste", "segregation"], "severity": "Critical", "active": true }, { "id": "RULE-045", "section": "Rule 8(2)", "requirement": "Bio-medical waste must be segregated into containers and bags at the point of generation itself, in accordance with Schedule I colour coding and categories.", "keywords": ["segregation", "point of generation", "containers", "bags", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-046", "section": "Rule 8(3)", "requirement": "All containers and bags containing bio-medical waste must be labelled in accordance with Schedule IV specifications.", "keywords": ["labelling", "containers", "bags", "Schedule IV"], "severity": "High", "active": true }, { "id": "RULE-047", "section": "Rule 8(4)", "requirement": "Bar-code and GPS tracking system must be established for all bio-medical waste bags and containers within one year from notification.", "keywords": ["bar-code", "GPS", "tracking", "bags", "containers"], "severity": "Medium", "active": true }, { "id": "RULE-048", "section": "Rule 8(5)", "requirement": "Bio-medical waste must be transported only in vehicles bearing labels as specified in Schedule IV.", "keywords": ["transport", "vehicles", "labels", "Schedule IV"], "severity": "High", "active": true }, { "id": "RULE-049", "section": "Rule 8(6)", "requirement": "Transport vehicles carrying bio-medical waste must comply with conditions laid down by SPCB and the Motor Vehicles Act, 1988.", "keywords": ["transport", "vehicles", "SPCB", "Motor Vehicles Act"], "severity": "High", "active": true }, { "id": "RULE-050", "section": "Rule 8(7)", "requirement": "Untreated anatomical waste, soiled waste, and biotechnology waste must not be stored beyond 48 hours. If storage beyond 48 hours is unavoidable, the prescribed authority must be informed.", "keywords": ["storage", "48 hours", "anatomical waste", "soiled waste", "biotechnology waste"], "severity": "Critical", "active": true }, { "id": "RULE-051", "section": "Rule 8(8)", "requirement": "Microbiology, biotechnology, and clinical laboratory waste must be pre-treated to achieve either Log 6 level of sterilisation (6 log10 reduction) or Log 4 level of disinfection (4 log10 reduction) as per WHO guidelines before disposal.", "keywords": ["microbiology waste", "pre-treatment", "Log 6", "Log 4", "sterilisation", "disinfection", "WHO"], "severity": "Critical", "active": true }, { "id": "RULE-052", "section": "Rule 10", "requirement": "Every occupier and CBMWTF operator must obtain authorisation by applying to the prescribed authority in Form II. The prescribed authority shall grant authorisation in Form III.", "keywords": ["authorisation", "Form II", "Form III", "prescribed authority"], "severity": "High", "active": true }, { "id": "RULE-053", "section": "Rule 13", "requirement": "Every occupier and CBMWTF operator must submit an annual report in Form IV to the prescribed authority by 30th June of every year.", "keywords": ["annual report", "Form IV", "30 June", "submission"], "severity": "High", "active": true }, { "id": "RULE-054", "section": "Rule 14", "requirement": "All records related to bio-medical waste management must be maintained for a period of five years and shall be subject to inspection by the prescribed authority at any time.", "keywords": ["records", "five years", "retention", "inspection"], "severity": "High", "active": true }, { "id": "RULE-055", "section": "Rule 15", "requirement": "In case of any major accident at the facility, the occupier/operator must intimate the prescribed authority immediately and submit a written report in Form I within 24 hours of the accident.", "keywords": ["accident", "immediate reporting", "24 hours", "Form I", "written report"], "severity": "Critical", "active": true }, { "id": "RULE-056", "section": "Rule 18", "requirement": "The occupier or operator shall be liable for all damages to the environment or public health caused due to improper handling, treatment, or disposal of bio-medical waste.", "keywords": ["liability", "damages", "environment", "public health"], "severity": "Critical", "active": true }, { "id": "RULE-057", "section": "Schedule I - Yellow Category", "requirement": "Anatomical waste, soiled waste, expired/discarded medicines, chemical waste (liquid), chemical waste (solid), discarded linen/mattresses/bedding contaminated with blood/body fluids, and microbiology/biotechnology/clinical laboratory waste must be collected in yellow coloured non-chlorinated plastic bags.", "keywords": ["yellow bag", "anatomical waste", "soiled waste", "expired medicines", "chemical waste", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-058", "section": "Schedule I - Red Category", "requirement": "Contaminated recyclable waste including tubing, bottles, intravenous sets, catheters, urine bags, syringes (without needles), gloves, and similar items must be collected in red coloured non-chlorinated plastic bags.", "keywords": ["red bag", "recyclable waste", "contaminated", "tubing", "syringes", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-059", "section": "Schedule I - White Category", "requirement": "Waste sharps including needles, syringes with fixed needles, scalpels, blades, and any contaminated sharp objects must be collected in white translucent, puncture-proof, leak-proof, tamper-proof containers.", "keywords": ["white container", "sharps", "needles", "puncture-proof", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-060", "section": "Schedule I - Blue Category", "requirement": "Glassware including broken or discarded contaminated glass, metallic body implants, and similar items must be collected in puncture-proof and leak-proof cardboard boxes with blue coloured marking.", "keywords": ["blue marking", "glassware", "cardboard box", "metallic implants", "Schedule I"], "severity": "Critical", "active": true }, { "id": "RULE-061", "section": "Schedule II - Incineration Standards", "requirement": "Incinerators must achieve a minimum combustion efficiency of 99%, with primary chamber temperature at least 800\u00b0C, secondary chamber temperature at least 1050\u00b0C, and minimum gas residence time of 2 seconds in the secondary chamber.", "keywords": ["incineration", "combustion efficiency", "800\u00b0C", "1050\u00b0C", "residence time", "Schedule II"], "severity": "Critical", "active": true }, { "id": "RULE-062", "section": "Schedule II - Stack Height", "requirement": "The stack height of the incinerator must be a minimum of 30 metres above ground level.", "keywords": ["stack height", "30 metres", "incinerator", "Schedule II"], "severity": "High", "active": true }, { "id": "RULE-063", "section": "Schedule II - Autoclave Standards", "requirement": "Autoclaves must operate at validated parameters: gravity flow at 121\u00b0C/15 psi for 60 minutes, or 135\u00b0C/31 psi for 45 minutes, or 149\u00b0C/52 psi for 30 minutes to achieve required sterilisation.", "keywords": ["autoclave", "sterilisation", "121\u00b0C", "135\u00b0C", "149\u00b0C", "pressure", "Schedule II"], "severity": "Critical", "active": true }, { "id": "RULE-064", "section": "Schedule II - Emission Monitoring", "requirement": "Quarterly emission monitoring must be conducted through a laboratory approved by the SPCB or CPCB, and a continuous emission monitoring system must be installed for the incinerator.", "keywords": ["emission monitoring", "quarterly", "SPCB", "CPCB", "continuous monitoring", "Schedule II"], "severity": "High", "active": true }] };
+    const checklistData = { "framework": "Bio-Medical Waste Management Rules, 2016", "generated_at": "2026-05-01T14:30:00Z", "coverage_note": "64 rules mapped across 18 checklist items. All rules are covered. RULE-026 (CBMWTF training assistance to occupier) and RULE-031 (CBMWTF transparency \u2014 allowing occupier to observe treatment) are low-severity procedural obligations included under CHK-004 and CHK-011 respectively for completeness.", "checklist": [{ "id": "CHK-001", "evidence_item": "Authorisation and registration documents", "evidence_type": "Document", "responsible_party": "Administration / Compliance Officer", "rule_ids": ["RULE-001", "RULE-021", "RULE-052"], "description": "Valid authorisation from the State Pollution Control Board or Pollution Control Committee (Form III), original application records (Form II), proof of consent-to-operate synchronisation for bedded facilities, and evidence of compliance with general duty to handle bio-medical waste without adverse effects to health or environment." }, { "id": "CHK-002", "evidence_item": "Waste segregation and colour-coded storage records", "evidence_type": "Record", "responsible_party": "Infection Control / Nursing / Housekeeping", "rule_ids": ["RULE-002", "RULE-006", "RULE-038", "RULE-039", "RULE-044", "RULE-045", "RULE-057", "RULE-058", "RULE-059", "RULE-060"], "description": "Inspection records and photographic evidence of waste segregation at point of generation into correct colour-coded bags and containers as per Schedule I \u2014 yellow (anatomical, soiled, chemical, lab waste), red (contaminated recyclables), white translucent (sharps in puncture-proof containers), blue (glassware in cardboard boxes). Evidence that untreated BMW is never mixed with other waste, and that segregated waste is handed over to CBMWTF per Schedule I categories." }, { "id": "CHK-003", "evidence_item": "Pre-treatment and disinfection records for lab and microbiological waste", "evidence_type": "Record", "responsible_party": "Laboratory / Infection Control", "rule_ids": ["RULE-003", "RULE-051"], "description": "Autoclave and disinfection logs showing pre-treatment of laboratory waste, microbiological waste, blood samples, and blood bags through disinfection or sterilisation as per WHO or NACO guidelines. Evidence that microbiology and clinical laboratory waste achieves Log 6 sterilisation or Log 4 disinfection levels before packing and sending to CBMWTF." }, { "id": "CHK-004", "evidence_item": "Training records for healthcare workers on BMW management", "evidence_type": "Record", "responsible_party": "HR / Training Department / Infection Control", "rule_ids": ["RULE-007", "RULE-025", "RULE-026"], "description": "Training schedule and attendance registers showing induction training for all new healthcare workers and annual refresher training thereafter on bio-medical waste handling. Records must include: number of training programmes conducted, number of personnel trained, number of personnel who have not yet undergone training. For CBMWTF operators: evidence of worker training at induction and annually, and records of assistance provided to occupiers in their training programmes." }, { "id": "CHK-005", "evidence_item": "Immunisation records for BMW handlers", "evidence_type": "Record", "responsible_party": "Occupational Health / HR", "rule_ids": ["RULE-008", "RULE-027"], "description": "Vaccination records demonstrating that all healthcare workers and others involved in handling bio-medical waste have been immunised against Hepatitis B and Tetanus as per the National Immunisation Policy or Ministry of Health and Family Welfare guidelines. For CBMWTF operators: equivalent immunisation records for all facility workers." }, { "id": "CHK-006", "evidence_item": "Health check-up and occupational safety records", "evidence_type": "Record", "responsible_party": "Occupational Health / Safety Officer", "rule_ids": ["RULE-012", "RULE-013", "RULE-028"], "description": "Annual health check-up records for all healthcare workers and waste handlers conducted at induction and at least once a year thereafter. PPE procurement records, distribution logs, and compliance audit evidence showing that appropriate and adequate personal protective equipment is provided to all personnel involved in bio-medical waste handling \u2014 covering both occupier facilities and CBMWTF operations." }, { "id": "CHK-007", "evidence_item": "Bar-code and GPS tracking system documentation", "evidence_type": "Document", "responsible_party": "IT / Administration / CBMWTF Operations", "rule_ids": ["RULE-009", "RULE-023", "RULE-047"], "description": "Implementation records for the bar-code system applied to all bags and containers of bio-medical waste leaving the premises, established within one year from notification. GPS tracking system documentation for waste transport vehicles. Evidence of both occupier-side bar-coding and CBMWTF-side bar-code and GPS systems being operational." }, { "id": "CHK-008", "evidence_item": "BMW management register and website publication records", "evidence_type": "Record", "responsible_party": "Infection Control / IT / Administration", "rule_ids": ["RULE-014", "RULE-016", "RULE-032"], "description": "Day-to-day bio-medical waste management register updated with waste generated by category and colour coding as per Schedule I. Screenshots or evidence of monthly waste data displayed on the facility website. For CBMWTF operators: evidence that authorisation details, treatment information, and annual reports are published on the facility website. Evidence that the facility has established a website within two years of notification." }, { "id": "CHK-009", "evidence_item": "Accident reporting records and emergency procedures", "evidence_type": "Record", "responsible_party": "Safety Officer / Administration", "rule_ids": ["RULE-015", "RULE-029", "RULE-055"], "description": "Completed Form I for any major accidents (including fire hazards, blasts, truck topplings, accidental waste release) reported to the prescribed authority immediately with written report within 24 hours. Nil reports if no accidents occurred. Remedial action documentation. Emergency response plan and procedures. All accident records must also be included in the annual report." }, { "id": "CHK-010", "evidence_item": "Annual report (Form IV) and BMW management committee records", "evidence_type": "Document", "responsible_party": "Administration / Compliance Officer", "rule_ids": ["RULE-018", "RULE-053"], "description": "Filed Form IV annual report submitted to the prescribed authority on or before 30th June each year covering the preceding January-December period. Minutes of BMW management committee meetings held at least once every six months. For healthcare establishments with fewer than 30 beds: designation letter of the qualified person responsible for reviewing and monitoring BMW activities. Annual report made available on the facility website." }, { "id": "CHK-011", "evidence_item": "Treatment equipment operation and maintenance records", "evidence_type": "Record", "responsible_party": "Engineering / CBMWTF Operations", "rule_ids": ["RULE-019", "RULE-030", "RULE-031", "RULE-036", "RULE-054"], "description": "Operation records for all treatment equipment (incinerators, autoclaves, microwaves, hydroclaves, shredders) maintained for a minimum of five years. CBMWTF log books recording: weight of each batch, waste categories treated, time and date of treatment cycle, duration, and total hours of operation. All records subject to inspection by the prescribed authority or Ministry of Environment at any time." }, { "id": "CHK-012", "evidence_item": "Incineration and emission compliance records", "evidence_type": "Record", "responsible_party": "CBMWTF Operations / Environmental Compliance", "rule_ids": ["RULE-020", "RULE-037", "RULE-061", "RULE-062", "RULE-064"], "description": "Quarterly stack gaseous emission monitoring reports from a laboratory approved under the Environment (Protection) Act, 1986. Continuous emission monitoring system data transmitted to SPCB/PCC and CPCB servers. Records demonstrating: combustion efficiency at least 99%, primary chamber temperature at least 800 degrees C, secondary chamber at least 1050 degrees C with at least 2 second gas residence time, stack height at least 30 metres. Annual dioxin and furans monitoring reports (limit: 0.1 ng TEQ/Nm3 at 11% O2). Evidence of incinerator upgrades completed within two years of notification where required." }, { "id": "CHK-013", "evidence_item": "Liquid waste treatment and effluent discharge records", "evidence_type": "Record", "responsible_party": "Engineering / Environmental Compliance", "rule_ids": ["RULE-010", "RULE-011"], "description": "ETP operation records and effluent quality test reports demonstrating compliance with Schedule II liquid waste standards: pH 6.5-9.0, suspended solids 100 mg/l or less, oil and grease 10 mg/l or less, BOD 30 mg/l or less, COD 250 mg/l or less, and bio-assay test (90% fish survival after 96 hours). Records of chemical liquid waste segregation at source and pre-treatment or neutralisation before mixing with other effluent." }, { "id": "CHK-014", "evidence_item": "Transportation and labelling compliance records", "evidence_type": "Record", "responsible_party": "Transport / CBMWTF Operations", "rule_ids": ["RULE-046", "RULE-048", "RULE-049"], "description": "Evidence that all bio-medical waste containers and bags are labelled in accordance with Schedule IV (biohazard symbol, cytotoxic hazard symbol as applicable). Transport vehicle compliance documents showing Schedule IV Part A labels and Part B transport information (date, waste category, quantity, sender/receiver details). Vehicle compliance with SPCB conditions and Motor Vehicles Act, 1988 requirements for transporting infectious waste." }, { "id": "CHK-015", "evidence_item": "Waste storage duration compliance evidence", "evidence_type": "Record", "responsible_party": "Housekeeping / Infection Control / CBMWTF", "rule_ids": ["RULE-017", "RULE-022", "RULE-035", "RULE-050"], "description": "Waste collection logs and timestamps demonstrating that untreated human anatomical waste, animal anatomical waste, soiled waste, and biotechnology waste is not stored beyond 48 hours. Exception reports with reasons submitted to the prescribed authority where storage exceeded 48 hours. Evidence of CBMWTF timely collection including on holidays and non-working days. Records of notifications sent to prescribed authority when CBMWTF failed to collect on time." }, { "id": "CHK-016", "evidence_item": "Recyclable waste management and disposal records", "evidence_type": "Record", "responsible_party": "Administration / CBMWTF Operations", "rule_ids": ["RULE-033", "RULE-042", "RULE-043"], "description": "Records of treated recyclable bio-medical waste (plastics, glass) given to recyclers holding valid consent, authorisation, or registration from the respective SPCB or PCC. Auction and sale records for recyclable waste, submitted to the prescribed authority as part of the annual report. Verification records confirming recycler authorisation status. Records open for inspection by prescribed authorities." }, { "id": "CHK-017", "evidence_item": "Chlorinated plastic phase-out and BIS compliance evidence", "evidence_type": "Document", "responsible_party": "Procurement / Administration", "rule_ids": ["RULE-004", "RULE-034", "RULE-041"], "description": "Procurement records demonstrating use of non-chlorinated plastic bags for bio-medical waste segregation and transport. BIS compliance certificates or test reports for plastic bags used. Evidence of completed phase-out of chlorinated plastic bags, gloves, and blood bags within the two-year timeline. CBMWTF supply records for non-chlorinated coloured bags provided to occupiers." }, { "id": "CHK-018", "evidence_item": "CBMWTF contract, collection agreement, and service compliance", "evidence_type": "Document", "responsible_party": "Administration", "rule_ids": ["RULE-005", "RULE-024", "RULE-040", "RULE-056", "RULE-063"], "description": "Contract or service agreement with the CBMWTF operator specifying collection schedule, waste categories covered, and service level commitments. Evidence that no on-site treatment facility has been established where a CBMWTF operates within 75 km. Records of non-BMW solid waste disposed per respective waste management rules. Acknowledgement of liability for environmental or public health damages from improper handling. CBMWTF operator records of occupier non-compliance notifications to prescribed authority. Autoclave validation records demonstrating compliance with Schedule II sterilisation standards." }] };
 
     let currentReviewer = { name: '', email: '' };
     const allReviews = {};
@@ -1003,4 +1239,5 @@
     updateStats();
   </script>
 </body>
+
 </html>
